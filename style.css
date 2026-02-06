@@ -1,0 +1,61 @@
+/* Update pada variabel warna */
+:root {
+    --primary-color: #f59e0b; /* Orange Amber */
+    --secondary-color: #ef4444; /* Merah Orange untuk gradasi */
+    --bg-dark: #121212; /* Hitam yang sedikit lebih lembut */
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --text-light: #ffffff;
+}
+
+/* Update pada Hero Section (Background) */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Gradasi gelap ke orange di pojok */
+    background: radial-gradient(circle at top right, #451a03, #121212);
+    text-align: center;
+}
+
+/* Update pada Teks Utama (Gradient Orange) */
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #f59e0b, #fbbf24, #f97316);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Update pada Button */
+.btn {
+    padding: 12px 35px;
+    background: linear-gradient(45deg, #f59e0b, #f97316);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.4s;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.5);
+    filter: brightness(1.1);
+}
+
+/* Border Card saat Hover */
+.project-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-10px) scale(1.02);
+    border-color: #f59e0b; /* Border orange saat kursor di atasnya */
+}
+
+/* Logo Highlight */
+.logo span {
+    color: #f59e0b;
+}
